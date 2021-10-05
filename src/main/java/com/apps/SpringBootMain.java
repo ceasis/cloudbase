@@ -19,5 +19,7 @@ public class SpringBootMain {
         System.out.println("****************************************************");
         System.out.println("* STARTING YOUR APPLICATION ...                    *");
         System.out.println("****************************************************");
+        
+        //some changes 1
     }
 }
