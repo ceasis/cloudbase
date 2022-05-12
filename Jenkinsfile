@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        booleanParam(name: 'Deploy To Test', defaultValue: false, description: 'Deploys to TEST')
+        booleanParam(name: 'DEPLOY_TEST', defaultValue: false, description: 'Deploys to TEST')
     }
     
     tools {
