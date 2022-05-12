@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    parameters {
+        booleanParam(name: 'Deploy To Test', defaultValue: false, description: 'Deploys to TEST')
+    }
+    
     tools {
         maven 'Maven'
     }
