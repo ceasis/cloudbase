@@ -5,11 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'pwd'
-                
-                dir('/Users/choloasis/workspace/springboot-discovery-service') {
-                    sh 'mvn clean package'
-                }
-                
+                sh 'mvn clean package'
             }
         }
     }
