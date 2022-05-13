@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo '... building'
                 
-                sh 'mvn install'
+                sh 'mvn clean install package'
                 
             }
         }
