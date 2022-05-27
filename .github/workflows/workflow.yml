@@ -19,7 +19,7 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: Maven Clean Install
       run: mvn clean install
-    - name: Build with Maven
+    - name: Maven Package
       run: mvn -B package --file pom.xml
