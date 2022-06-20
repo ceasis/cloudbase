@@ -7,12 +7,8 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 public class SpringBootMain {
-<<<<<<< HEAD
-=======
 
-	// added some comments more comments
-	
->>>>>>> 2fd70b7 (more comments)
+	// added some comments more comments	
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMain.class, args);
     }
