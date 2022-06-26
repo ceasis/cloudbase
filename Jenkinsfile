@@ -5,9 +5,11 @@ pipeline {
         booleanParam(name: 'DEPLOY_TEST', defaultValue: false, description: 'Deploys to TEST')
     }
     
-    tools {
-        maven 'mvn'
+    tools { 
+        maven 'Maven 3.8.6' 
+        jdk 'jdk8' 
     }
+    
     stages {
         stage('build') {
             steps {
