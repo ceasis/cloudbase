@@ -14,7 +14,7 @@ pipeline {
                 
         stage('build and test') {
             when { 
-                environment name: 'DEPLOY_TEST', value: true 
+                environment name: 'DEPLOY_TEST', value: 'true'
             }
             steps {
                 echo 'with TESTING'
@@ -23,7 +23,7 @@ pipeline {
 
         stage('build only') {
             when { 
-                environment name: 'DEPLOY_TEST', value: false
+                environment name: 'DEPLOY_TEST', value: 'false'
             }
             steps {
                 echo 'JUST BUILD'
