@@ -11,13 +11,23 @@ pipeline {
     }
     
     stages {
-        stage('build') {
-            steps {
-                echo '... building'
                 
-                sh 'mvn clean install package'
-                
+        stage('build and test') {
+            when { 
+                environment name: 'DEPLOY_TEST', value: true 
             }
+            steps {
+                echo 'with TESTING'
+            }        
+        }
+
+        stage('build only') {
+            when { 
+                environment name: 'DEPLOY_TEST', value: false
+            }
+            steps {
+                echo 'JUST BUILD'
+            }        
         }
 
         stage('test') {
