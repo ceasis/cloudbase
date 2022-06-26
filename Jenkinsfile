@@ -6,7 +6,7 @@ pipeline {
     }
     
     tools {
-        maven 'Maven'
+        maven 'mvn'
     }
     stages {
         stage('build') {
